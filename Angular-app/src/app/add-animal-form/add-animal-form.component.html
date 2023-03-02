@@ -1,0 +1,11 @@
+<form [formGroup]="addAnimalsForm">
+  <label>Name: </label>
+  <input type="text" formControlName="animalName" />
+  <p>{{ addAnimalsForm.value.animalName }}</p>
+  <select formControlName="animalsSelection">
+    <option *ngFor="let animal of animals" [ngValue]="animal">
+      {{ animal.viewValue }}
+    </option>
+  </select>
+  <p>{{ addAnimalsForm.value.animalsSelection?.value }}</p>
+</form>

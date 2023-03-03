@@ -4,7 +4,6 @@
 
 Simple Angular App. Testing Reactive forms, EventEmitter, Input, Output, Services, HttpClient and get, delte, post. 
 
----
 
 ## Preview
 

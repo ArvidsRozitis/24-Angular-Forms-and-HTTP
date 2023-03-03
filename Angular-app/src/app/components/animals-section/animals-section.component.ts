@@ -37,7 +37,16 @@ export class AnimalsSectionComponent {
       this.getAnimals();
     });
   }
+
   showOnlyCats(filter: boolean) {
-    console.log('rādi kaķus', !filter);
+    console.log('rādi kaķus', filter);
+    if (!filter) {
+      this.apiAnimalService.filterAnimals('cat').subscribe((response) => {
+        console.log('Server response', response);
+        this.animals = response
+      })
+    } else {
+      this.getAnimals()
+    }
   }
 }

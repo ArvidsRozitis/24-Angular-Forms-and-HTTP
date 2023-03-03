@@ -33,4 +33,8 @@ export class AnimalsService {
       newAnimal
     );
   }
+
+  filterAnimals(filter: string) {
+    return this._http.get<AnimalsInterface[]>(`http://localhost:3004/animals/${filter}`)
+  }
 }

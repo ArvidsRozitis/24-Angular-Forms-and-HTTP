@@ -1,0 +1,6 @@
+<p>animals-section works!</p>
+<app-add-animal-form (addAnimal)="onSubmit($event)"></app-add-animal-form>
+<app-animal-list
+  [animals]="animals"
+  (deleteRequest)="deleteAnimal($event)"
+></app-animal-list>

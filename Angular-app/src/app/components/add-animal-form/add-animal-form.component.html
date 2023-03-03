@@ -1,4 +1,4 @@
-<form [formGroup]="addAnimalsForm">
+<form [formGroup]="addAnimalsForm" (submit)="sendNewAnimal()">
   <label>Name: </label>
   <input type="text" formControlName="animalName" />
   <p>{{ addAnimalsForm.value.animalName }}</p>
@@ -8,4 +8,5 @@
     </option>
   </select>
   <p>{{ addAnimalsForm.value.animalsSelection?.value }}</p>
+  <button>add</button>
 </form>

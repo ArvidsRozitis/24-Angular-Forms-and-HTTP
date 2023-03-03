@@ -37,4 +37,7 @@ export class AnimalsSectionComponent {
       this.getAnimals();
     });
   }
+  showOnlyCats(filter: boolean) {
+    console.log('rādi kaķus', !filter);
+  }
 }

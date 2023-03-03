@@ -3,25 +3,24 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface AnimalsInterface {
-  _id: string,
-  animalName: string,
-  animalType: string
+  _id: string;
+  animalName: string;
+  animalType: string;
 }
 
 export interface PostAnimalInterface {
-  animalName: string,
-  animalType: string
+  animalName: string;
+  animalType: string;
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AnimalsService {
-
-  constructor(private _http:HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   getAnimalsData() {
-    return this._http.get<AnimalsInterface[]>(`http://localhost:3004/animals`)
+    return this._http.get<AnimalsInterface[]>(`http://localhost:3004/animals`);
   }
 
   deleteAnimal(id: string): Observable<any> {

@@ -1,4 +1,5 @@
 <p>animals-section works!</p>
+<app-toggle-switch (filterRequest)="showOnlyCats($event)"></app-toggle-switch>
 <app-add-animal-form (addAnimal)="onSubmit($event)"></app-add-animal-form>
 <app-animal-list
   [animals]="animals"

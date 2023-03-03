@@ -8,5 +8,6 @@ Simple Angular App. Testing Reactive forms, EventEmitter, Input, Output, Service
 
 ## Preview
 
-![preview3](./preview3.gif)
+![prev1](./prev1.gif)
 
+![prev2](./prev2.gif)

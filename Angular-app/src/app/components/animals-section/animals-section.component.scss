@@ -1,0 +1,10 @@
+.animals__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 250, 241);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    align-items: center;
+}

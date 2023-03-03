@@ -1,12 +1,28 @@
-<form [formGroup]="addAnimalsForm" (submit)="sendNewAnimal()">
-  <label>Name: </label>
-  <input type="text" formControlName="animalName" />
-  <p>{{ addAnimalsForm.value.animalName }}</p>
-  <select formControlName="animalsSelection">
-    <option *ngFor="let animal of animals" [ngValue]="animal">
-      {{ animal.viewValue }}
-    </option>
-  </select>
-  <p>{{ addAnimalsForm.value.animalsSelection?.value }}</p>
-  <button>add</button>
+<form
+  class="addAnimal__wraper"
+  [formGroup]="addAnimalsForm"
+  (submit)="sendNewAnimal()"
+>
+  <div class="input__wrapper">
+    <input required
+      class="input__text"
+      type="text"
+      formControlName="animalName"
+      placeholder="animal name"
+    />
+
+    <select class="select" formControlName="animalsSelection">
+      <option *ngFor="let animal of animals" [ngValue]="animal">
+        {{ animal.viewValue }}
+      </option>
+    </select>
+
+    <button class="add__button">ADD</button>
+  </div>
+  <div>
+    <p class="test__paragraph">name: {{ addAnimalsForm.value.animalName }}</p>
+    <p class="test__paragraph">
+      selection: {{ addAnimalsForm.value.animalsSelection?.value }}
+    </p>
+  </div>
 </form>

@@ -1,0 +1,63 @@
+.addAnimal__wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.test__paragraph {
+  margin: 0;
+  font-size: 0.75rem;
+  color: grey;
+}
+.input__wrapper {
+  display: flex;
+  gap: 5px;
+}
+.input__text {
+  all: unset;
+  display: flex;
+  border: solid 1px grey;
+  border-radius: 6px;
+  background-color: rgb(250, 250, 250);
+  padding: 4px 5px 1px 10px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  transition: outline 0.2s;
+
+  &:focus {
+    outline: 1px solid rgb(158, 158, 158);
+  }
+  &::placeholder {
+    color: rgb(159, 159, 159);
+  }
+}
+.select {
+  background-color: rgb(250, 250, 250);
+  border-radius: 6px;
+  border: solid 1px grey;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid rgb(158, 158, 158);
+  }
+}
+
+.add__button{
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  background-color: rgb(108, 192, 192);
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 8px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: green;
+  }
+}

@@ -1,7 +1,8 @@
-<p>animals-section works!</p>
-<app-toggle-switch (filterRequest)="showOnlyCats($event)"></app-toggle-switch>
-<app-add-animal-form (addAnimal)="onSubmit($event)"></app-add-animal-form>
-<app-animal-list
-  [animals]="animals"
-  (deleteRequest)="deleteAnimal($event)"
-></app-animal-list>
+<div class="animals__wrapper">
+  <app-toggle-switch (filterRequest)="showOnlyCats($event)"></app-toggle-switch>
+  <app-add-animal-form (addAnimal)="onSubmit($event)"></app-add-animal-form>
+  <app-animal-list
+    [animals]="animals"
+    (deleteRequest)="deleteAnimal($event)"
+  ></app-animal-list>
+</div>

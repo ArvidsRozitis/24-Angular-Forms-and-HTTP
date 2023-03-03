@@ -1,11 +1,13 @@
 <!-- Rounded switch -->
-<label class="switch">
-  <input
-    type="checkbox"
-    [checked]="checked"
-    (change)="checked = !checked"
-    (click)="filterRequest.emit(checked)"
-  />
-  <span class="slider round"></span>
-</label>
-<p>{{ checked }}</p>
+<div class="wrapper">
+  <label class="checkbox__text">show only cats</label>
+  <label class="switch">
+    <input
+      type="checkbox"
+      [checked]="checked"
+      (change)="checked = !checked"
+      (click)="filterRequest.emit(checked)"
+    />
+    <span class="slider round"></span>
+  </label>
+</div>

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.animal__warpper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(242, 231, 145);
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgb(232, 212, 65);
+  }
+}
+.type__wrapper {
+  display: flex;
+  background-color: rgb(248, 185, 10);
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.name__wraper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.type__heading {
+  margin: 0;
+  text-transform: uppercase;
+}
+.name__heading {
+  margin: 0;
+  font-size: 2rem;
+}
+.delete__container {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.delete__button {
+  all: unset;
+  cursor: pointer;
+  font-weight: bolder;
+  color: red;
+  font-style: italic;
+  transform: rotate(-45deg);
+  transition: font-size 0.2s;
+
+  &:hover {
+    font-size: 1.5rem;
+  }
+}

@@ -6,7 +6,6 @@ It's a simple Angular app in which I am testing reactive forms, EventEmitter, In
 
 </br>
 </br>
-</br>
 
 ## Preview
 
